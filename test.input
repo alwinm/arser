@@ -1,0 +1,20 @@
+a=1
+b=2
+c=3
+
+
+#comment=4
+comment#=4
+comment=#4
+d=4#comment
+
+
+ e=e
+f =f
+ g =g
+ h = h
+ i = i 
+ j = j   \t
+\tk = k   \t
+L\t= \tL
+M\n= \nM    
