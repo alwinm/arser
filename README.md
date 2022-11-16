@@ -1,3 +1,4 @@
+
 # Arser
 
 A parser with less p (pain? prettiness? pestilence? performance?)
@@ -12,8 +13,10 @@ Errors, printfs, and logging are up to you, except in the explicit printing func
 
 ```
 #include <string> // C++98
+#include <cstring> // for strcpy
 #include <unordered_map> // C++11
 #include <fstream> //
+#include <algorithm> // for trimming whitespace
 ```
 
 # Rules for input file contents and argc/argv 

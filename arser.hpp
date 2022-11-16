@@ -33,8 +33,10 @@ https://github.com/alwinm/arser
 
 
 #include <string>
+#include <cstring>
 #include <unordered_map>
 #include <fstream>
+#include <algorithm>
 namespace arser {
 
   void assign(int& x, std::string string)
