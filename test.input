@@ -17,4 +17,7 @@ f =f
  j = j   \t
 \tk = k   \t
 L\t= \tL
-M\n= \nM    
+M\n= \nM
+
+
+override=test.input

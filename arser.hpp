@@ -27,7 +27,7 @@ For more information, please refer to <https://unlicense.org>
 
 /*
 Alwin Mao
-
+https://github.com/alwinm/arser
  */
 
 
@@ -85,9 +85,9 @@ namespace arser {
 
   void assign(const char* x, std::string string)
   {
-    // NOTE: THIS DOESN'T WORK (becomes null if/when string is destroyed)
+    // NOTE: THIS becomes null if/when string is destroyed
     // x = string.c_str();
-    //
+    // What should I do about attempts to pass const char* to assign?
   }
 
   void assign(std::string& x, std::string string)

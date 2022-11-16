@@ -65,7 +65,11 @@ void test3(int argc, char** argv)
   const char* ccs;
   char cs[100];
   std::string ss;
-  
+
+
+  map["a"] = "1";
+  map["b"] = "2";
+  map["c"] = "3";  
   arser::assign(a,map["a"]);
   //arser::assign_from_map(a,map,"a");
   arser::assign_from_map(map,b,"b");
@@ -75,16 +79,18 @@ void test3(int argc, char** argv)
   map["ccs"] = "ccs";
   map["cs"] = "cs";
   map["ss"] = "ss";
-  
-  arser::assign_from_map(map,ccs,"ccs");
 
+  
+  // arser::assign_from_map(map,ccs,"ccs");
 
   arser::assign_from_map(map,cs,"cs");
 
   arser::assign_from_map(map,ss,"ss");    
   
   printf("a: %i b: %f c: %f fail: %f \n",a,b,c,fail);
-  printf("ccs: %s cs: %s ss: %s\n",ccs,cs,ss.c_str());
+
+  
+  printf("cs: %s ss: %s\n",cs,ss.c_str());
       
   
 }
