@@ -24,6 +24,7 @@ Whitespace is stripped from the left and right for keys and for values.
 
 An assigning line must be of form (key)=(value)
 
+A bool containing any of ```truTRU123456789``` is true, otherwise false (covers various capitalizations of TRUE, expected behavior with zero/non-zero). 
 
 # Usage
 ```
