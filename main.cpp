@@ -9,6 +9,15 @@ void pmal(std::unordered_map<std::string,std::string>& map, std::string line)
   }
 }
 
+/*
+void assert(bool boolean)
+{
+  if (!boolean) {
+    printf("Something's gone wrong\n");
+  }
+}
+*/
+
 
 
 void test1()
@@ -62,6 +71,7 @@ void test3(int argc, char** argv)
   float b;
   double c;
   double fail=10;
+  bool boolean;
   const char* ccs;
   char cs[100];
   std::string ss;
@@ -91,7 +101,41 @@ void test3(int argc, char** argv)
 
   
   printf("cs: %s ss: %s\n",cs,ss.c_str());
-      
+
+
+  arser::assign(boolean,"t");
+  assert(boolean);
+  arser::assign(boolean,"true");
+  assert(boolean);  
+  arser::assign(boolean,"True");
+  assert(boolean);  
+  arser::assign(boolean,"TruE");
+  assert(boolean);  
+  arser::assign(boolean,"1");
+  assert(boolean);
+  arser::assign(boolean,"10");
+  assert(boolean);  
+  arser::assign(boolean,"01");
+  assert(boolean);  
+
+  arser::assign(boolean,"f");
+  assert(!boolean);
+  arser::assign(boolean,"false");
+  assert(!boolean);  
+  arser::assign(boolean,"FALSE");
+  assert(!boolean);  
+  arser::assign(boolean,"False");
+  assert(!boolean);  
+  arser::assign(boolean,"0");
+  assert(!boolean);
+  arser::assign(boolean,"0.0");
+  assert(!boolean);
+  arser::assign(boolean,"000");
+  assert(!boolean);    
+  
+
+  
+  
   
 }
 

@@ -96,7 +96,11 @@ namespace arser {
     x = string;
   }  
 
-  
+  void assign(bool& x, std::string string)
+  {
+    // Thoughts: check for t, r, u, T, R, U, any nonzero digit.
+    x = (string.find_first_of("truTRU123456789") != std::string::npos);
+  }
   
   template<typename T, typename S>
   void assign_from_map(std::unordered_map<std::string,std::string>& map, T& x, S string)
